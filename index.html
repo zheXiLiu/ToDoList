@@ -1,0 +1,128 @@
+<!--  CS498 MP1 To Do List by Zhexi Liu -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+<title>To Do List</title>
+
+<link href="css/start/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+<link href="css/myCss.css" rel="stylesheet">
+
+<!-- Retrived from jquery.com & jqueryui.com -->
+<link href="css/media-queries.css" rel="stylesheet">
+<script src="js/jquery-1.9.0.js" type="text/jscript"></script>
+<script src="js/jquery-ui-1.10.0.custom.js" type="text/jscript"></script>
+
+<script src="js/myUI.js" type="text/jscript"></script>
+<script src="js/parse.js" type="text/jscript"></script>
+<script src="js/sort.js" type="text/jscript"></script>
+<script src="js/export.js" type="text/jscript"></script>
+
+</head>
+<body>
+	<div id="page_wrapper">
+		<header>
+			<div id="header_wrapper">
+				<h1>Interactive To Do List</h1>
+			</div>
+		</header>
+
+		<section>
+			<div id="row_container">
+				<button type="button" id="create_new_list">new list</button>
+				<button type="button" id="delete_finished">Delete finished</button>
+			</div>
+
+			<div style="clear: both"></div>
+			<div class='try'>
+				<div id="content_all">
+					<h3>All events</h3>
+					<section class="everything">
+						<aside>
+							<span id="op_refresh_list"> <span
+								class="ui-icon ui-icon-circle-zoomin" style="float: right"></span>
+								<p style="float: left; text-decoration: underline">Refresh</p>
+							</span>
+
+
+							<div class='clear'>
+								<br>
+							</div>
+
+							<span id="op_sort_alp"> <span
+								class="ui-icon ui-icon-circle-arrow-n" title="ascending"
+								style="float: right"></span>
+								<p style="float: left; text-decoration: underline">Alphabetic</p>
+							</span>
+							<div class='clear'>
+								<br>
+							</div>
+							<span id="op_sort_date"> <span
+								class="ui-icon ui-icon-circle-arrow-n" style="float: right"></span>
+								<p style="float: left; text-decoration: underline">DueDate</p>
+							</span>
+							<div class='clear'>
+								<br>
+							</div>
+
+							<span id="export_table" title='export to csv format'> <span
+								class="ui-icon ui-icon-circle-arrow-e" style="float: right"></span>
+								<p style="float: left; text-decoration: underline">Export</p>
+							</span>
+
+							<div class='clear'>
+								<br>
+							</div>
+						</aside>
+
+						<table id="everything">
+
+						</table>
+					</section>
+
+				</div>
+
+				<div class='try' id="storage_list" class="ui-widget"></div>
+
+				<div id="users-contain" class="ui-widget"></div>
+		</section>
+
+		<div id="dialog-form" title="Create a new list" class="popup">
+
+			<form>
+				<fieldset>
+					<p>Limit: 50 characters, a-z, A-Z</p>
+					<label for="list_name">List Name: </label> <input type="text"
+						name="list_name" id="list_name"
+						class="text ui-widget-content ui-corner-all" />
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="dialog-form2" title="Create an new event">
+
+			<form>
+				<fieldset>
+				<p>Please limit item name within 50 characters, a-z, A-Z, 0-9</p><br>
+				
+					<label> Item Name:</label> <input type="text" name="event_name"
+						id="event_name" /> <br> <label>Description:</label> <input
+						type="text" id="description"> <br> <label>Due
+						Date:&nbsp</label> <input type="text" id="datepicker" />
+
+				</fieldset>
+			</form>
+		</div>
+		<div id='hidden_table' style='display: none'></div>
+
+		
+		<footer> 
+			<div id = 'jessie'>CS498 MP1 - Zhexi Liu</div>
+		</footer>
+
+	</div>
+</body>
+</html>

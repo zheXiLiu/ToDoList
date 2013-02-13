@@ -1,0 +1,60 @@
+@media screen and (max-width: 1323px) {
+
+	#page_wrapper {
+		width: 82%;
+		height:auto;
+		 background-color:black; 
+	}
+
+	#header {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+#page_wrapper {
+		width: 100%;
+		height:auto;
+	}	
+	
+	#accordion{
+		width:100%;
+	}
+	
+	table
+	{
+		width:78%;
+		margin:0px;
+		padding:0px;
+	}
+	
+	aside
+	{
+		width:18%;
+		
+	}
+	
+	body { 
+		font-size: 70.5%;
+	}
+	
+	img{
+		width:100%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	table
+	{
+		width:76%
+	}
+	
+	body { 
+		font-size: 62.5%;
+	}
+}
