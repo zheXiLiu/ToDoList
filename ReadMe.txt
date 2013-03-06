@@ -1,8 +1,3 @@
-/*
-* CS498 MP1 - Client Side To Do List 
-* Author:Zhexi Liu  (liu275)
-*/
-
 1. Additional Features
 Feature1 - Animations:
 	- Use JQuery Accordion, Draggable, Datepicker Elements
