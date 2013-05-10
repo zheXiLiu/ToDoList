@@ -1,3 +1,8 @@
+0. Basic Features as todo list:
+        - Allow users to add and delete lists.
+	- Also alow users to add and delete items within the lists.
+	- mark things as done.
+
 1. Additional Features
 Feature1 - Animations:
 	- Use JQuery Accordion, Draggable, Datepicker Elements
@@ -21,7 +26,7 @@ jquery-ui-1.10.0.custom.css : Downloaded from http://http://jqueryui.com from jQ
 export.js: Export table into csv format, referenced from http://debozden.webs.com/apps/blog/show/9708273
 
 5. Anything Else?
-	- Works better under Chrome, inconsistant under Firefox.
+	- preferably with chrome.
 	- See Screenshots folder.
 
 
